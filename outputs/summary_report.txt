@@ -1,0 +1,84 @@
+Price Elasticity Modelling Summary Report
+========================================
+
+SKU-Level Elasticity Summary:
+count    265.000000
+mean       0.050325
+std        0.600174
+min       -5.664706
+25%       -0.021668
+50%        0.000000
+75%        0.078329
+max        4.524553
+Name: Elasticity, dtype: float64
+
+Most Price-Sensitive SKUs (most negative elasticity):
+     Product Number  Elasticity
+198         1067517   -5.664706
+30          1042983   -1.431712
+117         1064337   -1.395418
+46          1034004   -0.966392
+106         1006655   -0.892844
+
+Least Price-Sensitive SKUs (most positive elasticity):
+     Product Number  Elasticity
+27          1024280    4.524553
+145         1067193    3.103258
+18          1017370    2.132129
+1           1000430    1.955180
+118         1064630    1.691252
+
+Category-Level Average Elasticity:
+                         L3 Category Name  ...                                     Recommendation
+76                         Wire strainers  ...               Highly elastic: Consider price cuts.
+11                              Coveralls  ...               Highly elastic: Consider price cuts.
+10                          Companion dog  ...  Moderately elastic: Price changes will impact ...
+74                           Wet cat food  ...      Inelastic: Price changes have limited effect.
+14                     Drench combination  ...      Inelastic: Price changes have limited effect.
+18                           Electrolytes  ...      Inelastic: Price changes have limited effect.
+32                             Insulators  ...      Inelastic: Price changes have limited effect.
+78                                Y-posts  ...      Inelastic: Price changes have limited effect.
+19  Equestrian, performance and lifestyle  ...      Inelastic: Price changes have limited effect.
+6                          Cattle pour-on  ...      Inelastic: Price changes have limited effect.
+
+[10 rows x 3 columns]
+
+Recommendations:
+- Highly elastic categories: Consider price cuts to boost sales.
+   L3 Category Name  avg_elasticity
+76   Wire strainers       -3.278775
+11        Coveralls       -1.431712
+
+- Inelastic categories: Price changes have limited effect.
+                         L3 Category Name  avg_elasticity
+74                           Wet cat food       -0.277350
+14                     Drench combination       -0.270153
+18                           Electrolytes       -0.267451
+32                             Insulators       -0.252825
+78                                Y-posts       -0.232475
+19  Equestrian, performance and lifestyle       -0.176530
+6                          Cattle pour-on       -0.138218
+2                                 Bedding       -0.102973
+26                    Flea, tick and worm       -0.090940
+60              Spades, shovels and forks       -0.090679
+12                           Culvert pipe       -0.069753
+3                                   Boots       -0.068888
+44                       Mains energizers       -0.067040
+43                              MDPE pipe       -0.057240
+15                     Drench endectocide       -0.053571
+42                        M18 Power Tools       -0.052083
+40                    Livestrand and tape       -0.045644
+45                           Meal feeders       -0.041667
+22                             Farm gates       -0.040704
+46                                  Polos       -0.038576
+51                              Secateurs       -0.026650
+55                               Singlets       -0.024552
+34                                  Jeans       -0.018042
+9                        Collated staples       -0.017170
+63                                 System       -0.016704
+59                       Solar energizers       -0.008203
+29                                   Hats       -0.004490
+
+- Review categories with positive or atypical elasticity for data quality or special business cases.
+
+End of Report
